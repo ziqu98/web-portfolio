@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Source Code Pro', monospace;
+    margin: 0;
+    padding: 0;
+}
+
+h2, h3 {
+    color: #73a5bc;
+}
+
+header {
+    display: inline;
+}
+
+.title {
+    font-size: 20px;
+    padding: 40px;
+    background-color: #27433d;
+    text-align: center;
+    color: #73a5bc;
+}
+
+nav {
+    background-color: #192d27;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem 1rem;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav li a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+    padding: .5rem 1.5rem;
+    border-radius: 999px;
+    transition: all .2s ease-in-out;
+}
+
+nav a:hover {
+    font-weight: bold;
+    background-color: white;
+    color: #192d27;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    gap: 1.5rem;
+    background-image: url(../image/main-cover.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #335654;
+    color: white;
+    text-align: justify;
+}
+
+#content {
+    flex: 5;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem 2rem;
+}
+
+#skills {
+    display: flex;
+    flex-direction: column;
+}
+
+#skills section {
+    flex-direction: row;
+    display: flex;
+    gap: 1.5rem;
+}
+
+#portfolio {
+    display: flex;
+    flex-direction: column;
+}
+
+#portfolio section {
+    flex-flow: row wrap;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1.5rem;
+}
+
+div.sub {
+    background: #27433d;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.item {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: left;
+    gap: 1.5rem;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+.item div {
+    background-color: #73a5bc;
+    color: #192d27;
+    padding: .5rem 1.5rem;
+    border-radius: 999px;
+    text-align: left;
+    align-content: flex-start;
+}
+
+.item img {
+    width: 300px;
+}
+
+.item img:hover {
+    width: 310px;
+}
+
+aside {
+    flex: 1.5;
+}
+
+aside header {
+    text-align: center;
+}
+
+aside img {
+    width: 200px;
+}
+
+aside table {
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+aside th {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 5px;
+    color: #73a5bc;
+}
+
+aside tr a {
+    text-decoration: none;
+    color: white;
+    transition: all .1s ease-in-out;
+}
+
+aside tr a:hover {
+    color: #192d27;
+}
+
+table.certificates td, table.certificates th {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #73a5bc;
+}
+
+table.certificates th {
+    padding-right: 10px;
+}
+
+table.certificates td {
+    padding-left: 10px;
+}
+
+footer {
+    font-size: 20px;
+    padding: 20px;
+    color: white;
+    background-color: #192d27;
+    text-align: center;
+    font-weight: bold;
+}
+
+footer ul {
+    padding: 1rem;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+footer li {
+    list-style-type: none;
+}
+
+footer li a {
+    text-decoration: none;
+    color: white;
+    transition: all .1s ease-in-out;
+}
+
+footer li a:hover {
+    color: #73a5bc;
+}
+
+@media screen and (max-width: 1200px) {
+    main {
+      flex-flow: column-reverse nowrap;
+    }
+   
+    main aside {
+      align-self: center;
+    }
+
+    aside th {
+        text-align: right;
+        padding-right: 10px;
+    }
+
+    aside td {
+        padding-left: 10px;
+    }
+    
+    #skills section {
+        flex-flow: column nowrap;
+    }
+
+    .item {
+        justify-content: center;
+    }
+}
+
+/* 
+    color by poline: https://meodai.github.io/poline/ 
+    Serene Sea - #73a5bc
+    Enchanting Ivy - #335654
+*/
